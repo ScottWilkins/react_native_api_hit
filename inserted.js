@@ -1,3 +1,5 @@
+var tree_image = 'https://breezometer.com/wordpress/wp-content/uploads/2016/01/nature_big_tree_hd.jpg';
+
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -14,6 +16,10 @@ export default class Inserted extends Component {
       <TouchableOpacity onPress={this.props.onPress}>
         <View style={button_styles.button}>
           <Text> {this.props.customText} </Text>
+        </View>
+        <View>
+        <Image source={{uri: tree_image}}
+     style={{width: 400, height: 400}} />
         </View>
       </TouchableOpacity>
     );
